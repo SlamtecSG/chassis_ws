@@ -1,0 +1,5 @@
+<launch>
+    
+    <node name="downsample" pkg="downsample"  type="downsample.py" output="screen"   />
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/slamtec/chassis_ws/install
+
+Name: downsample
+Description: Description of downsample
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

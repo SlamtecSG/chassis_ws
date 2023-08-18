@@ -1,0 +1,15 @@
+serial_port: "/dev/ttyUSB0"      
+serial_baudrate: 1000000
+ultra_frame_id: "ultra"
+
+
+
+
+#  Base通信接口：
+#  Cp0通信接口：
+#  超声配置：id、数量及位置
+#  碰撞：id、数量及位置
+#  跌落：id、数量及位置
+#  Rplidar 转速（A系列）：
+#  常规数据发布频率（周期）：
+#  Imu raw数据发布频率（周期）：默认200hz

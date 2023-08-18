@@ -1,0 +1,2 @@
+athena_slam:chassis_ros:downsample:erratic_teleop:laser_filter_test:rplidar_ros:rto_local_planner:vel_ctl
+-DCATKIN_DEVEL_PREFIX=/home/slamtec/chassis_ws/devel -DCMAKE_INSTALL_PREFIX=/home/slamtec/chassis_ws/install -G Unix Makefiles

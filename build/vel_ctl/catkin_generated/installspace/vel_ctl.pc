@@ -1,0 +1,8 @@
+prefix=/home/slamtec/chassis_ws/install
+
+Name: vel_ctl
+Description: Description of vel_ctl
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+<launch>
+    <!-- 设置地图的配置文件 -->
+    <include file="$(find athena_slam)/launch/amcl_test.launch" />
+
+    <!-- 运行move_base节点 -->
+    <include file="$(find athena_slam)/launch/move_base.launch" />
+        <!-- <remap from="scan" to="/scan_downsampled"/> -->
+</launch>

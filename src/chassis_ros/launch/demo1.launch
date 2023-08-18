@@ -1,0 +1,8 @@
+<launch>
+  <node name="chassis_node"          pkg="chassis_ros"  type="chassis_node" output="screen">
+  <rosparam command="load" file="$(find chassis_ros)/config/params.yaml" />
+  </node>
+
+  <node name="rviz" pkg="rviz" type="rviz"  />
+
+</launch>

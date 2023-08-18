@@ -1,0 +1,23 @@
+<launch>
+    <!-- chassis node -->
+    <include file="$(find chassis_ros)/launch/chassis_ros.launch" />
+
+     <!-- publish tf tree -->
+    <include file="$(find athena_slam)/launch/tf.launch" />
+
+    <!-- rplidar node -->
+    <include file="$(find rplidar_ros)/launch/rplidar_s2.launch" />
+        <!-- <remap from="scan_raw" to="/scan"/> -->
+
+    <!-- downsample the lazer points of /scan topic -->
+    <include file="$(find athena_slam)/launch/downsample.launch" />
+    <!-- <include file="$(find downsample)/launch/laser_filter.launch" /> -->
+    <include file="$(find downsample)/launch/downsample.launch" />
+
+
+    <!-- gmapping node -->
+    <!-- <include file="$(find athena_slam)/launch/gmapping.launch" /> -->
+
+    <!-- move_base node -->
+    <!-- <include file="$(find athena_slam)/launch/move_base.launch" /> -->
+</launch>

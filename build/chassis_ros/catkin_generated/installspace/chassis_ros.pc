@@ -1,0 +1,8 @@
+prefix=/home/slamtec/chassis_ws/install
+
+Name: chassis_ros
+Description: Description of chassis_ros
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

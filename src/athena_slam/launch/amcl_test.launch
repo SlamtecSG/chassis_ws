@@ -1,0 +1,9 @@
+<launch>
+    
+    <!-- 设置地图的配置文件 -->
+    <include file="$(find athena_slam)/launch/map_server.launch" />
+    
+    <!-- 启动AMCL节点 -->
+    <include file="$(find athena_slam)/launch/amcl.launch" />
+
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+
+    <node name="chassis_node" pkg="chassis_ros"  type="chassis_node" output="screen"    />
+        <!-- <remap from="cmd_vel" to="/smooth_cmd_vel"/> -->
+        
+</launch>

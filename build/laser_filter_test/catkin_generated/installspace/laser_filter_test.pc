@@ -1,0 +1,8 @@
+prefix=/home/slamtec/chassis_ws/install
+
+Name: laser_filter_test
+Description: Description of laser_filter_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

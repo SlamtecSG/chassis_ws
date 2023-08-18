@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="https://10.100.120.171/svn/BAMA"
+   name=""
+   revision="39"
+   last-author="baijing"
+   url="https://10.100.120.171/svn/BAMA/Code/RobotCtrlGroup/baijing_working/src/erratic_teleop/src"
+   committed-rev="39"
+   kind="dir"
+   committed-date="2014-10-27T09:06:49.231000Z"/>
+<entry
+   name="keyboard.cpp"
+   revision="85"
+   checksum="b821f7458bbfaa4969c15e4ea7493b2f"
+   last-author="baijing"
+   committed-rev="85"
+   text-time="2014-11-03T10:13:18.000000Z"
+   kind="file"
+   committed-date="2014-11-07T06:45:48.256000Z"/>
+</wc-entries>

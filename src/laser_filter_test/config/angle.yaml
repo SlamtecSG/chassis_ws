@@ -1,0 +1,44 @@
+scan_filter_chain:
+# - name: shadows
+#   type: laser_filters/ScanShadowsFilter
+#   params:
+#     min_angle: 10
+#     max_angle: 170
+#     neighbors: 20
+#     window: 1
+# - name: dark_shadows
+#   type: laser_filters/LaserScanIntensityFilter
+#   params: 
+#     lower_threshold: 100
+#     upper_threshold: 10000
+#     disp_histogram: 0
+# - name: angle1
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: -2.86234
+#     upper_angle: -2.760799
+#     tolerance: 0.02
+# - name: angle2
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: -2.583087
+#     upper_angle: -1.466076
+#     tolerance: 0.02
+- name: angle3
+  type: laser_filters/LaserScanAngularBoundsFilterInPlace
+  params:
+    lower_angle: -0.52 #-1.134464
+    upper_angle: 0.52 #1.134464
+    tolerance: 0.02
+# - name: angle4
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: 1.466077
+#     upper_angle: 2.583087
+#     tolerance: 0.02
+# - name: angle5
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: 2.75762
+#     upper_angle: 2.86234
+#     tolerance: 0.02

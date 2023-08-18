@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   repos="https://10.100.120.171/svn/BAMA"
+   name=""
+   revision="38"
+   last-author="baijing"
+   uuid="e825a727-8e94-1647-bace-0b9dac8abd19"
+   url="https://10.100.120.171/svn/BAMA/Code/RobotCtrlGroup/baijing_working/src/erratic_teleop"
+   committed-rev="38"
+   kind="dir"
+   committed-date="2014-10-27T09:05:44.285995Z"/>
+<entry
+   name=".cproject"
+   revision="39"
+   checksum="45a2f7bf87cbb57c323bf51977f1a262"
+   last-author="baijing"
+   text-time="2014-09-23T03:03:41.000000Z"
+   committed-rev="39"
+   kind="file"
+   committed-date="2014-10-27T09:06:49.231000Z"/>
+<entry
+   name=".project"
+   revision="39"
+   checksum="a86c87c59782d035a5d3282cc0a516a3"
+   last-author="baijing"
+   text-time="2014-09-23T03:03:41.000000Z"
+   committed-rev="39"
+   kind="file"
+   committed-date="2014-10-27T09:06:49.231000Z"/>
+<entry
+   name="CMakeLists.txt"
+   revision="39"
+   checksum="9dc1974a52941630e9884488ef8afadd"
+   last-author="baijing"
+   text-time="2014-09-23T03:03:41.000000Z"
+   committed-rev="39"
+   kind="file"
+   committed-date="2014-10-27T09:06:49.231000Z"/>
+<entry
+   name="package.xml"
+   revision="39"
+   checksum="58ed210a065f736f410ba4b2bd523aa4"
+   last-author="baijing"
+   text-time="2014-09-23T03:03:41.000000Z"
+   committed-rev="39"
+   kind="file"
+   committed-date="2014-10-27T09:06:49.231000Z"/>
+<entry
+   name="src"
+   kind="dir"/>
+</wc-entries>

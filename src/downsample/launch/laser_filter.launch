@@ -1,0 +1,5 @@
+<launch>
+    
+    <node name="laser_filter" pkg="downsample"  type="laser_filter.py" output="screen"   />
+
+</launch>

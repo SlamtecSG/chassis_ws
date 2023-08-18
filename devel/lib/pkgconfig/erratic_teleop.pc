@@ -1,0 +1,8 @@
+prefix=/home/slamtec/chassis_ws/devel
+
+Name: erratic_teleop
+Description: Description of erratic_teleop
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

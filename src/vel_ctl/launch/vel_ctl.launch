@@ -1,0 +1,5 @@
+<launch>
+    
+    <node name="vel_ctl" pkg="vel_ctl"  type="vel_ctl.py" output="screen"   />
+
+</launch>

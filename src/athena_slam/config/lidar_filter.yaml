@@ -1,0 +1,70 @@
+scan_filter_chain:
+- name: angle1
+  type: laser_filters/LaserScanAngularBoundsFilterInPlace
+  params:
+    lower_angle: -2.007129
+    upper_angle: -1.675516
+
+- name: angle2
+  type: laser_filters/LaserScanAngularBoundsFilterInPlace
+  params:
+    lower_angle: -0.558505
+    upper_angle: -0.383973
+    
+- name: angle3
+  type: laser_filters/LaserScanAngularBoundsFilterInPlace
+  params:
+    lower_angle: -0.279253
+    upper_angle: 0.279253
+
+- name: angle4
+  type: laser_filters/LaserScanAngularBoundsFilterInPlace
+  params:
+    lower_angle: 0.383973
+    upper_angle: 0.558506
+
+- name: angle5
+  type: laser_filters/LaserScanAngularBoundsFilterInPlace
+  params:
+    lower_angle: 1.675517
+    upper_angle: 2.007129
+
+
+
+
+# scan_filter_chain:
+# - name: angle1
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: -3.141593
+#     upper_angle: -2.86234
+
+# - name: angle2
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: -2.75762
+#     upper_angle: -2.583087
+    
+# - name: angle3
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: -1.466076
+#     upper_angle: -1.134464
+
+# - name: angle4
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: 1.134464
+#     upper_angle: 1.466077
+
+# - name: angle5
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: 2.583088
+#     upper_angle: 2.75762
+
+# - name: angle6
+#   type: laser_filters/LaserScanAngularBoundsFilterInPlace
+#   params:
+#     lower_angle: 2.86234
+#     upper_angle: 3.141593
