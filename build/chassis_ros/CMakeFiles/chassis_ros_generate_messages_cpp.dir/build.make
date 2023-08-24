@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/slamtec/chassis_ws/build
 include chassis_ros/CMakeFiles/chassis_ros_generate_messages_cpp.dir/progress.make
 
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_cpp: /home/slamtec/chassis_ws/devel/include/chassis_ros/health_info.h
+chassis_ros/CMakeFiles/chassis_ros_generate_messages_cpp: /home/slamtec/chassis_ws/devel/include/chassis_ros/test.h
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_cpp: /home/slamtec/chassis_ws/devel/include/chassis_ros/battery.h
 
 
@@ -64,15 +65,23 @@ chassis_ros/CMakeFiles/chassis_ros_generate_messages_cpp: /home/slamtec/chassis_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from chassis_ros/health_info.srv"
 	cd /home/slamtec/chassis_ws/src/chassis_ros && /home/slamtec/chassis_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/include/chassis_ros -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/slamtec/chassis_ws/devel/include/chassis_ros/test.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/slamtec/chassis_ws/devel/include/chassis_ros/test.h: /home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv
+/home/slamtec/chassis_ws/devel/include/chassis_ros/test.h: /opt/ros/melodic/share/gencpp/msg.h.template
+/home/slamtec/chassis_ws/devel/include/chassis_ros/test.h: /opt/ros/melodic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from chassis_ros/test.srv"
+	cd /home/slamtec/chassis_ws/src/chassis_ros && /home/slamtec/chassis_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/include/chassis_ros -e /opt/ros/melodic/share/gencpp/cmake/..
+
 /home/slamtec/chassis_ws/devel/include/chassis_ros/battery.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
 /home/slamtec/chassis_ws/devel/include/chassis_ros/battery.h: /home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv
 /home/slamtec/chassis_ws/devel/include/chassis_ros/battery.h: /opt/ros/melodic/share/gencpp/msg.h.template
 /home/slamtec/chassis_ws/devel/include/chassis_ros/battery.h: /opt/ros/melodic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from chassis_ros/battery.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from chassis_ros/battery.srv"
 	cd /home/slamtec/chassis_ws/src/chassis_ros && /home/slamtec/chassis_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/include/chassis_ros -e /opt/ros/melodic/share/gencpp/cmake/..
 
 chassis_ros_generate_messages_cpp: chassis_ros/CMakeFiles/chassis_ros_generate_messages_cpp
 chassis_ros_generate_messages_cpp: /home/slamtec/chassis_ws/devel/include/chassis_ros/health_info.h
+chassis_ros_generate_messages_cpp: /home/slamtec/chassis_ws/devel/include/chassis_ros/test.h
 chassis_ros_generate_messages_cpp: /home/slamtec/chassis_ws/devel/include/chassis_ros/battery.h
 chassis_ros_generate_messages_cpp: chassis_ros/CMakeFiles/chassis_ros_generate_messages_cpp.dir/build.make
 

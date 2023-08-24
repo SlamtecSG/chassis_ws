@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/chassis_ros_generate_messages_nodejs"
   "/home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/health_info.js"
+  "/home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/test.js"
   "/home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/battery.js"
 )
 

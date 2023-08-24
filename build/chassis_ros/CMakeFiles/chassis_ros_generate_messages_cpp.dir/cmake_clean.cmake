@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/chassis_ros_generate_messages_cpp"
   "/home/slamtec/chassis_ws/devel/include/chassis_ros/health_info.h"
+  "/home/slamtec/chassis_ws/devel/include/chassis_ros/test.h"
   "/home/slamtec/chassis_ws/devel/include/chassis_ros/battery.h"
 )
 

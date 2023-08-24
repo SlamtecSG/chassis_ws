@@ -6,46 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/slamtec/chassis_ws/devel/include/chassis_ros/battery.h
-ros/service_traits.h
--
-chassis_ros/batteryRequest.h
--
-chassis_ros/batteryResponse.h
--
-
-/home/slamtec/chassis_ws/devel/include/chassis_ros/batteryRequest.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/home/slamtec/chassis_ws/devel/include/chassis_ros/batteryResponse.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
 /home/slamtec/chassis_ws/src/chassis_ros/./sdk/include/sl_chassis.h
 sl_chassis_driver.h
 /home/slamtec/chassis_ws/src/chassis_ros/./sdk/include/sl_chassis_driver.h
@@ -760,10 +720,6 @@ boost/make_shared.hpp
 cstddef
 -
 memory
--
-
-/opt/ros/melodic/include/ros/message_operations.h
-ostream
 -
 
 /opt/ros/melodic/include/ros/message_traits.h

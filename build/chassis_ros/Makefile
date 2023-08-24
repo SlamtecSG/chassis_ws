@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/rule:
-	cd /home/slamtec/chassis_ws/build && $(MAKE) -f CMakeFiles/Makefile2 chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/rule
-.PHONY : chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/rule
+chassis_ros/CMakeFiles/health_info_client.dir/rule:
+	cd /home/slamtec/chassis_ws/build && $(MAKE) -f CMakeFiles/Makefile2 chassis_ros/CMakeFiles/health_info_client.dir/rule
+.PHONY : chassis_ros/CMakeFiles/health_info_client.dir/rule
 
 # Convenience name for target.
-chassis_ros_generate_messages_eus: chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/rule
+health_info_client: chassis_ros/CMakeFiles/health_info_client.dir/rule
 
-.PHONY : chassis_ros_generate_messages_eus
+.PHONY : health_info_client
 
 # fast build rule for target.
-chassis_ros_generate_messages_eus/fast:
-	cd /home/slamtec/chassis_ws/build && $(MAKE) -f chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/build.make chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/build
-.PHONY : chassis_ros_generate_messages_eus/fast
+health_info_client/fast:
+	cd /home/slamtec/chassis_ws/build && $(MAKE) -f chassis_ros/CMakeFiles/health_info_client.dir/build.make chassis_ros/CMakeFiles/health_info_client.dir/build
+.PHONY : health_info_client/fast
 
 # Convenience name for target.
 chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_battery.dir/rule:
@@ -196,6 +196,21 @@ _chassis_ros_generate_messages_check_deps_battery: chassis_ros/CMakeFiles/_chass
 _chassis_ros_generate_messages_check_deps_battery/fast:
 	cd /home/slamtec/chassis_ws/build && $(MAKE) -f chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_battery.dir/build.make chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_battery.dir/build
 .PHONY : _chassis_ros_generate_messages_check_deps_battery/fast
+
+# Convenience name for target.
+chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_test.dir/rule:
+	cd /home/slamtec/chassis_ws/build && $(MAKE) -f CMakeFiles/Makefile2 chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_test.dir/rule
+.PHONY : chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_test.dir/rule
+
+# Convenience name for target.
+_chassis_ros_generate_messages_check_deps_test: chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_test.dir/rule
+
+.PHONY : _chassis_ros_generate_messages_check_deps_test
+
+# fast build rule for target.
+_chassis_ros_generate_messages_check_deps_test/fast:
+	cd /home/slamtec/chassis_ws/build && $(MAKE) -f chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_test.dir/build.make chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_test.dir/build
+.PHONY : _chassis_ros_generate_messages_check_deps_test/fast
 
 # Convenience name for target.
 chassis_ros/CMakeFiles/chassis_ros_gencpp.dir/rule:
@@ -273,19 +288,19 @@ chassis_ros_generate_messages_py/fast:
 .PHONY : chassis_ros_generate_messages_py/fast
 
 # Convenience name for target.
-chassis_ros/CMakeFiles/health_info_client.dir/rule:
-	cd /home/slamtec/chassis_ws/build && $(MAKE) -f CMakeFiles/Makefile2 chassis_ros/CMakeFiles/health_info_client.dir/rule
-.PHONY : chassis_ros/CMakeFiles/health_info_client.dir/rule
+chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/rule:
+	cd /home/slamtec/chassis_ws/build && $(MAKE) -f CMakeFiles/Makefile2 chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/rule
+.PHONY : chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-health_info_client: chassis_ros/CMakeFiles/health_info_client.dir/rule
+chassis_ros_generate_messages_eus: chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/rule
 
-.PHONY : health_info_client
+.PHONY : chassis_ros_generate_messages_eus
 
 # fast build rule for target.
-health_info_client/fast:
-	cd /home/slamtec/chassis_ws/build && $(MAKE) -f chassis_ros/CMakeFiles/health_info_client.dir/build.make chassis_ros/CMakeFiles/health_info_client.dir/build
-.PHONY : health_info_client/fast
+chassis_ros_generate_messages_eus/fast:
+	cd /home/slamtec/chassis_ws/build && $(MAKE) -f chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/build.make chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/build
+.PHONY : chassis_ros_generate_messages_eus/fast
 
 # Convenience name for target.
 chassis_ros/CMakeFiles/chassis_ros_geneus.dir/rule:
@@ -798,15 +813,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... chassis_ros_generate_messages_eus"
+	@echo "... health_info_client"
 	@echo "... _chassis_ros_generate_messages_check_deps_battery"
+	@echo "... _chassis_ros_generate_messages_check_deps_test"
 	@echo "... chassis_ros_gencpp"
 	@echo "... battery_client"
 	@echo "... chassis_ros_generate_messages"
 	@echo "... _chassis_ros_generate_messages_check_deps_health_info"
 	@echo "... list_install_components"
 	@echo "... chassis_ros_generate_messages_py"
-	@echo "... health_info_client"
+	@echo "... chassis_ros_generate_messages_eus"
 	@echo "... install/strip"
 	@echo "... chassis_ros_geneus"
 	@echo "... install/local"

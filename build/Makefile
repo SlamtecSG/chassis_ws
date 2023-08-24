@@ -1000,17 +1000,17 @@ actionlib_generate_messages_cpp/fast:
 .PHONY : actionlib_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named chassis_ros_generate_messages_eus
+# Target rules for targets named health_info_client
 
 # Build rule for target.
-chassis_ros_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 chassis_ros_generate_messages_eus
-.PHONY : chassis_ros_generate_messages_eus
+health_info_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 health_info_client
+.PHONY : health_info_client
 
 # fast build rule for target.
-chassis_ros_generate_messages_eus/fast:
-	$(MAKE) -f chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/build.make chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/build
-.PHONY : chassis_ros_generate_messages_eus/fast
+health_info_client/fast:
+	$(MAKE) -f chassis_ros/CMakeFiles/health_info_client.dir/build.make chassis_ros/CMakeFiles/health_info_client.dir/build
+.PHONY : health_info_client/fast
 
 #=============================================================================
 # Target rules for targets named _chassis_ros_generate_messages_check_deps_battery
@@ -1024,6 +1024,19 @@ _chassis_ros_generate_messages_check_deps_battery: cmake_check_build_system
 _chassis_ros_generate_messages_check_deps_battery/fast:
 	$(MAKE) -f chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_battery.dir/build.make chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_battery.dir/build
 .PHONY : _chassis_ros_generate_messages_check_deps_battery/fast
+
+#=============================================================================
+# Target rules for targets named _chassis_ros_generate_messages_check_deps_test
+
+# Build rule for target.
+_chassis_ros_generate_messages_check_deps_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _chassis_ros_generate_messages_check_deps_test
+.PHONY : _chassis_ros_generate_messages_check_deps_test
+
+# fast build rule for target.
+_chassis_ros_generate_messages_check_deps_test/fast:
+	$(MAKE) -f chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_test.dir/build.make chassis_ros/CMakeFiles/_chassis_ros_generate_messages_check_deps_test.dir/build
+.PHONY : _chassis_ros_generate_messages_check_deps_test/fast
 
 #=============================================================================
 # Target rules for targets named chassis_ros_gencpp
@@ -1091,17 +1104,17 @@ chassis_ros_generate_messages_py/fast:
 .PHONY : chassis_ros_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named health_info_client
+# Target rules for targets named chassis_ros_generate_messages_eus
 
 # Build rule for target.
-health_info_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 health_info_client
-.PHONY : health_info_client
+chassis_ros_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chassis_ros_generate_messages_eus
+.PHONY : chassis_ros_generate_messages_eus
 
 # fast build rule for target.
-health_info_client/fast:
-	$(MAKE) -f chassis_ros/CMakeFiles/health_info_client.dir/build.make chassis_ros/CMakeFiles/health_info_client.dir/build
-.PHONY : health_info_client/fast
+chassis_ros_generate_messages_eus/fast:
+	$(MAKE) -f chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/build.make chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/build
+.PHONY : chassis_ros_generate_messages_eus/fast
 
 #=============================================================================
 # Target rules for targets named chassis_ros_geneus
@@ -1869,14 +1882,15 @@ help:
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... tf_generate_messages_eus"
 	@echo "... actionlib_generate_messages_cpp"
-	@echo "... chassis_ros_generate_messages_eus"
+	@echo "... health_info_client"
 	@echo "... _chassis_ros_generate_messages_check_deps_battery"
+	@echo "... _chassis_ros_generate_messages_check_deps_test"
 	@echo "... chassis_ros_gencpp"
 	@echo "... battery_client"
 	@echo "... chassis_ros_generate_messages"
 	@echo "... _chassis_ros_generate_messages_check_deps_health_info"
 	@echo "... chassis_ros_generate_messages_py"
-	@echo "... health_info_client"
+	@echo "... chassis_ros_generate_messages_eus"
 	@echo "... chassis_ros_geneus"
 	@echo "... chassis_ros_generate_messages_cpp"
 	@echo "... chassis_ros_generate_messages_lisp"

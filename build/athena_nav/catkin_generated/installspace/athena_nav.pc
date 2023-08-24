@@ -1,8 +1,0 @@
-prefix=/home/slamtec/chassis_ws/install
-
-Name: athena_nav
-Description: Description of athena_nav
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

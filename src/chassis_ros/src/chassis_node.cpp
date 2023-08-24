@@ -21,6 +21,8 @@
 
 // 定义了 RAD2DEG 宏，用于将弧度转换为角度
 #define DEG2RAD(x) ((x)*M_PI / 180.0)
+#define SHIFT15BITS 32768.00
+#define SCALE_FACTOR 16384.00
 // 使用了sl命名空间
 using namespace sl;
 
@@ -306,39 +308,66 @@ void publish_Odom(ros::Publisher* pub1, ros::Publisher* pub2, const sl_chassis_d
 void publish_Imu(ros::Publisher* pub, const sl_imu_raw_data_t& Imu_data)
 {
     
-
-    double acc_x = Imu_data.acc_x;
-    double acc_y = Imu_data.acc_y / 16.0;
-    double acc_z = Imu_data.acc_z / 16.0;
+    //根据datasheet,其sensitivity scale factor is 16384, 正负2g
+    double acc_x = Imu_data.acc_x / SHIFT15BITS * 2 * 9.8;
+    double acc_y = Imu_data.acc_y / SHIFT15BITS * 2 * 9.8;
+    double acc_z = Imu_data.acc_z / SHIFT15BITS * 2 * 9.8;
     
-    double acc_x_test = static_cast<double>(Imu_data.acc_x);
+    //double acc_x_test = static_cast<double>(Imu_data.acc_x);
 
-    double gyro_x = Imu_data.gyro_x / 65536.0;
-    double gyro_y = Imu_data.gyro_y / 65536.0;
-    double gyro_z = Imu_data.gyro_z / 65536.0;
+    double gyro_x = Imu_data.gyro_x / SHIFT15BITS * 500 / 180 * 3.1415926;
+    double gyro_y = Imu_data.gyro_y / SHIFT15BITS * 500 / 180 * 3.1415926;
+    double gyro_z = Imu_data.gyro_z / SHIFT15BITS * 500 / 180 * 3.1415926;
 
-    double mag_x = Imu_data.mag_x / 65536.0;
-    double mag_y = Imu_data.mag_y / 65536.0;
-    double mag_z = Imu_data.mag_z / 65536.0;
+    // double mag_x = Imu_data.mag_x / 65536.0;
+    // double mag_y = Imu_data.mag_y / 65536.0;
+    // double mag_z = Imu_data.mag_z / 65536.0;
 
     
-    // ROS_INFO("Received velocity message: raw_acc_x: %d, acc_x_test: %d, acc_y: %d, acc_z: %d", Imu_data.acc_x, acc_x_test, acc_y, acc_z);
-    
+    //ROS_INFO("Received velocity message: raw_acc_x: %d, acc_x_test: %d, acc_y: %d, acc_z: %d", acc_x, acc_y, acc_y, acc_z);
+    //ROS_INFO("Received velocity message: gyro_x: %d, gyro_x: %d, gyro_x: %d", Imu_data.gyro_x , Imu_data.gyro_y , Imu_data.gyro_z);
+    //ROS_INFO("Received velocity message: acc_x: %d, acc_x: %d, acc_x: %d", Imu_data.acc_x , Imu_data.acc_y , Imu_data.acc_z);
     sensor_msgs::Imu Imu;
     
-    // nav_msgs::Odometry odomMsg;
-    // odomMsg.header.stamp = ros::Time::now();
-    // odomMsg.header.frame_id = "odom";
-    // odomMsg.child_frame_id = "base_link";
+    
+    Imu.header.stamp = ros::Time::now();
+    Imu.header.frame_id = "Imu";
+    Imu.linear_acceleration.x =  acc_x;
+    Imu.linear_acceleration.y =  acc_y;
+    Imu.linear_acceleration.z =  acc_z;
 
-    // odomMsg.pose.pose.position.x = accumulated_x;
-    // odomMsg.pose.pose.position.y = accumulated_y;
-    // odomMsg.pose.pose.position.z = 0.0;
+    Imu.angular_velocity.x = gyro_x;
+    Imu.angular_velocity.y = gyro_y;
+    Imu.angular_velocity.z = gyro_z;
 
-    // tf2::Quaternion quat;
-    // quat.setRPY(0.0, 0.0, accumulated_yaw);
-    // geometry_msgs::Quaternion odomQuat = tf2::toMsg(quat);
-    // odomMsg.pose.pose.orientation = odomQuat;
+    // Imu.linear_acceleration.x = Imu_data.acc_x;
+    // Imu.linear_acceleration.y = Imu_data.acc_y;
+    // Imu.linear_acceleration.z = Imu_data.acc_z;
+
+    // Imu.angular_velocity.x = Imu_data.gyro_x;
+    // Imu.angular_velocity.y = Imu_data.gyro_y;
+    // Imu.angular_velocity.z = Imu_data.gyro_z;
+
+
+    tf2::Quaternion quat;
+    //quat.setRPY(0, 0, 0);
+    //geometry_msgs::Quaternion ImuQuat = tf2::toMsg(quat);
+    //Imu.orientation = ImuQuat;
+
+
+    // static tf2_ros::TransformBroadcaster broadcaster;
+    // geometry_msgs::TransformStamped transformStamped;
+    // transformStamped.header.stamp = ros::Time::now();
+    // transformStamped.header.frame_id = "Imu";
+    // transformStamped.child_frame_id = "base_link";
+    // transformStamped.transform.translation.x = gyro_x;
+    // transformStamped.transform.translation.y = gyro_y;
+    // transformStamped.transform.translation.z = gyro_z;
+    // //transformStamped.transform.rotation = ImuQuat;
+    // broadcaster.sendTransform(transformStamped);
+
+
+    pub->publish(Imu);
 }
 
 
@@ -507,7 +536,7 @@ int main(int argc, char * argv[])
     // 发布底盘速度
     ros::Publisher velPub = nh.advertise<geometry_msgs::Twist>("robot_vel", 1000);
     // 发布 Imu
-    ros::Publisher ImuPub = nh.advertise<sensor_msgs::Imu>("Imu", 1000);
+    ros::Publisher ImuPub = nh.advertise<sensor_msgs::Imu>("imu_raw_data", 1000);
 
     ros::Publisher PImuPub = nh.advertise<sensor_msgs::Imu>("PImu", 1000);
 
@@ -656,3 +685,4 @@ int main(int argc, char * argv[])
     return 0;
 
 }
+

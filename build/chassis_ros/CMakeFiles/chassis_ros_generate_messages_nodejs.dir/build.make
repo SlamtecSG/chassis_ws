@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/slamtec/chassis_ws/build
 include chassis_ros/CMakeFiles/chassis_ros_generate_messages_nodejs.dir/progress.make
 
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_nodejs: /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/health_info.js
+chassis_ros/CMakeFiles/chassis_ros_generate_messages_nodejs: /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/test.js
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_nodejs: /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/battery.js
 
 
@@ -62,13 +63,19 @@ chassis_ros/CMakeFiles/chassis_ros_generate_messages_nodejs: /home/slamtec/chass
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from chassis_ros/health_info.srv"
 	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv
 
+/home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/test.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/test.js: /home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from chassis_ros/test.srv"
+	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv
+
 /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/battery.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/battery.js: /home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from chassis_ros/battery.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from chassis_ros/battery.srv"
 	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv
 
 chassis_ros_generate_messages_nodejs: chassis_ros/CMakeFiles/chassis_ros_generate_messages_nodejs
 chassis_ros_generate_messages_nodejs: /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/health_info.js
+chassis_ros_generate_messages_nodejs: /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/test.js
 chassis_ros_generate_messages_nodejs: /home/slamtec/chassis_ws/devel/share/gennodejs/ros/chassis_ros/srv/battery.js
 chassis_ros_generate_messages_nodejs: chassis_ros/CMakeFiles/chassis_ros_generate_messages_nodejs.dir/build.make
 

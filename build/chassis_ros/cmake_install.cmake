@@ -41,6 +41,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/chassis_ros/srv" TYPE FILE FILES
     "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv"
     "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv"
+    "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv"
     )
 endif()
 

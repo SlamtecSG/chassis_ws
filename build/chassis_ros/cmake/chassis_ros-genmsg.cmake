@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "chassis_ros: 0 messages, 2 services")
+message(STATUS "chassis_ros: 0 messages, 3 services")
 
 set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_chassis_ros_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "chassis_ros" "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv" ""
 )
 
+get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv" NAME_WE)
+add_custom_target(_chassis_ros_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "chassis_ros" "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv" ""
+)
+
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv" NAME_WE)
 add_custom_target(_chassis_ros_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "chassis_ros" "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv" ""
@@ -37,6 +42,12 @@ add_custom_target(_chassis_ros_generate_messages_check_deps_${_filename}
 ### Generating Services
 _generate_srv_cpp(chassis_ros
   "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/chassis_ros
+)
+_generate_srv_cpp(chassis_ros
+  "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/chassis_ros
@@ -62,6 +73,8 @@ add_dependencies(chassis_ros_generate_messages chassis_ros_generate_messages_cpp
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_cpp _chassis_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv" NAME_WE)
+add_dependencies(chassis_ros_generate_messages_cpp _chassis_ros_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_cpp _chassis_ros_generate_messages_check_deps_${_filename})
 
@@ -78,6 +91,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS chassis_ros_generate_messages_cpp)
 ### Generating Services
 _generate_srv_eus(chassis_ros
   "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/chassis_ros
+)
+_generate_srv_eus(chassis_ros
+  "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/chassis_ros
@@ -103,6 +122,8 @@ add_dependencies(chassis_ros_generate_messages chassis_ros_generate_messages_eus
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_eus _chassis_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv" NAME_WE)
+add_dependencies(chassis_ros_generate_messages_eus _chassis_ros_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_eus _chassis_ros_generate_messages_check_deps_${_filename})
 
@@ -119,6 +140,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS chassis_ros_generate_messages_eus)
 ### Generating Services
 _generate_srv_lisp(chassis_ros
   "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/chassis_ros
+)
+_generate_srv_lisp(chassis_ros
+  "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/chassis_ros
@@ -144,6 +171,8 @@ add_dependencies(chassis_ros_generate_messages chassis_ros_generate_messages_lis
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_lisp _chassis_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv" NAME_WE)
+add_dependencies(chassis_ros_generate_messages_lisp _chassis_ros_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_lisp _chassis_ros_generate_messages_check_deps_${_filename})
 
@@ -160,6 +189,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS chassis_ros_generate_messages_lisp)
 ### Generating Services
 _generate_srv_nodejs(chassis_ros
   "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/chassis_ros
+)
+_generate_srv_nodejs(chassis_ros
+  "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/chassis_ros
@@ -185,6 +220,8 @@ add_dependencies(chassis_ros_generate_messages chassis_ros_generate_messages_nod
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_nodejs _chassis_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv" NAME_WE)
+add_dependencies(chassis_ros_generate_messages_nodejs _chassis_ros_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_nodejs _chassis_ros_generate_messages_check_deps_${_filename})
 
@@ -201,6 +238,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS chassis_ros_generate_messages_nodej
 ### Generating Services
 _generate_srv_py(chassis_ros
   "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/chassis_ros
+)
+_generate_srv_py(chassis_ros
+  "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/chassis_ros
@@ -225,6 +268,8 @@ add_dependencies(chassis_ros_generate_messages chassis_ros_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv" NAME_WE)
+add_dependencies(chassis_ros_generate_messages_py _chassis_ros_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_py _chassis_ros_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv" NAME_WE)
 add_dependencies(chassis_ros_generate_messages_py _chassis_ros_generate_messages_check_deps_${_filename})

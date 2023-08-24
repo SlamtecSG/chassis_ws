@@ -17,7 +17,6 @@ FILE(GLOB CHASSIS_SDK_SRC
 )
 
 
-
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   nav_msgs
@@ -35,6 +34,7 @@ add_service_files(
   FILES
   battery.srv
   health_info.srv
+  test.srv
 )
 generate_messages(
   DEPENDENCIES
@@ -62,32 +62,40 @@ link_directories(${LIBUSB_LIBRARY_DIRS})
 
 
 # 声明当前包是一个 catkin 包
-catkin_package()
+# catkin_package()
+catkin_package(
+  CATKIN_DEPENDS std_msgs message_runtime
+)
 
 # 定义一个可执行文件，包括 src/chassis_node.cpp 和 CHASSIS_SDK的源文件
+
 add_executable(chassis_node src/chassis_node.cpp ${CHASSIS_SDK_SRC})
-add_executable(battery_client server/battery_client.cpp ${CHASSIS_SDK_SRC})
-add_executable(health_info_client server/health_info_client.cpp)
-
-# add_dependencies(chassis_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
-
-
-## Specify libraries to link a library or executable target against
+add_dependencies(chassis_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(chassis_node
   ${catkin_LIBRARIES}
   ${LIBUSB_LIBRARIES}
 )
 
+add_executable(battery_client server/battery_client.cpp ${CHASSIS_SDK_SRC})
+add_dependencies(battery_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(battery_client
 ${catkin_LIBRARIES}
 ${LIBUSB_LIBRARIES}
 )
 
+add_executable(health_info_client server/health_info_client.cpp)
+add_dependencies(health_info_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(health_info_client
 ${catkin_LIBRARIES}
 ${LIBUSB_LIBRARIES}
 )
+
+
+
+
+
+
+
 
 # 安装目标文件，包括 Node  可执行文件，安装到适当的目录
 install(TARGETS chassis_node

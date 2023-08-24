@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv;/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv"
+services_str = "/home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv;/home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv;/home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv"
 pkg_name = "chassis_ros"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

@@ -8,4 +8,6 @@
     (:file "_package_battery" :depends-on ("_package"))
     (:file "health_info" :depends-on ("_package_health_info"))
     (:file "_package_health_info" :depends-on ("_package"))
+    (:file "test" :depends-on ("_package_test"))
+    (:file "_package_test" :depends-on ("_package"))
   ))

@@ -6,46 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/slamtec/chassis_ws/devel/include/chassis_ros/health_info.h
-ros/service_traits.h
--
-chassis_ros/health_infoRequest.h
--
-chassis_ros/health_infoResponse.h
--
-
-/home/slamtec/chassis_ws/devel/include/chassis_ros/health_infoRequest.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/home/slamtec/chassis_ws/devel/include/chassis_ros/health_infoResponse.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
 /home/slamtec/chassis_ws/src/chassis_ros/server/health_info_client.cpp
 ros/ros.h
 /home/slamtec/chassis_ws/src/chassis_ros/server/ros/ros.h
@@ -260,10 +220,6 @@ boost/make_shared.hpp
 cstddef
 -
 memory
--
-
-/opt/ros/melodic/include/ros/message_operations.h
-ostream
 -
 
 /opt/ros/melodic/include/ros/message_traits.h

@@ -1,0 +1,7 @@
+# 电池状态 服务
+# 客户端请求时发送
+int32 num1
+---
+# 服务器响应发送的数据
+int32 battery_percentage
+int32 battery_status

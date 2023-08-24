@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/slamtec/chassis_ws/build
 include chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/progress.make
 
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus: /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/health_info.l
+chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus: /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/test.l
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus: /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/battery.l
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus: /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/manifest.l
 
@@ -63,17 +64,23 @@ chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus: /home/slamtec/chassis_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from chassis_ros/health_info.srv"
 	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv
 
+/home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/test.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/test.l: /home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from chassis_ros/test.srv"
+	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv
+
 /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/battery.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/battery.l: /home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from chassis_ros/battery.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from chassis_ros/battery.srv"
 	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv
 
 /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for chassis_ros"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for chassis_ros"
 	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros chassis_ros std_msgs
 
 chassis_ros_generate_messages_eus: chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus
 chassis_ros_generate_messages_eus: /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/health_info.l
+chassis_ros_generate_messages_eus: /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/test.l
 chassis_ros_generate_messages_eus: /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/srv/battery.l
 chassis_ros_generate_messages_eus: /home/slamtec/chassis_ws/devel/share/roseus/ros/chassis_ros/manifest.l
 chassis_ros_generate_messages_eus: chassis_ros/CMakeFiles/chassis_ros_generate_messages_eus.dir/build.make

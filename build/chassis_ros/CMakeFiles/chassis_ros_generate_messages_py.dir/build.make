@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/slamtec/chassis_ws/build
 include chassis_ros/CMakeFiles/chassis_ros_generate_messages_py.dir/progress.make
 
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_health_info.py
+chassis_ros/CMakeFiles/chassis_ros_generate_messages_py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_test.py
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_battery.py
 chassis_ros/CMakeFiles/chassis_ros_generate_messages_py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/__init__.py
 
@@ -63,19 +64,26 @@ chassis_ros/CMakeFiles/chassis_ros_generate_messages_py: /home/slamtec/chassis_w
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV chassis_ros/health_info"
 	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/slamtec/chassis_ws/src/chassis_ros/srv/health_info.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv
 
+/home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_test.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_test.py: /home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV chassis_ros/test"
+	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/slamtec/chassis_ws/src/chassis_ros/srv/test.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv
+
 /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_battery.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
 /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_battery.py: /home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV chassis_ros/battery"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python code from SRV chassis_ros/battery"
 	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/slamtec/chassis_ws/src/chassis_ros/srv/battery.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p chassis_ros -o /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv
 
 /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/__init__.py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_health_info.py
+/home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/__init__.py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_test.py
 /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/__init__.py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_battery.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for chassis_ros"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/slamtec/chassis_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for chassis_ros"
 	cd /home/slamtec/chassis_ws/build/chassis_ros && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv --initpy
 
 chassis_ros_generate_messages_py: chassis_ros/CMakeFiles/chassis_ros_generate_messages_py
 chassis_ros_generate_messages_py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_health_info.py
+chassis_ros_generate_messages_py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_test.py
 chassis_ros_generate_messages_py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/_battery.py
 chassis_ros_generate_messages_py: /home/slamtec/chassis_ws/devel/lib/python2.7/dist-packages/chassis_ros/srv/__init__.py
 chassis_ros_generate_messages_py: chassis_ros/CMakeFiles/chassis_ros_generate_messages_py.dir/build.make

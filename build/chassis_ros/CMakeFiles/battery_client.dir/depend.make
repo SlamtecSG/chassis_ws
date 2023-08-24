@@ -112,9 +112,6 @@ chassis_ros/CMakeFiles/battery_client.dir/sdk/src/sl_usb_channel.cpp.o: /home/sl
 chassis_ros/CMakeFiles/battery_client.dir/sdk/src/sl_usb_channel.cpp.o: /home/slamtec/chassis_ws/src/chassis_ros/sdk/src/hal/usb/libusb/include/libusb.h
 chassis_ros/CMakeFiles/battery_client.dir/sdk/src/sl_usb_channel.cpp.o: /home/slamtec/chassis_ws/src/chassis_ros/sdk/src/sl_usb_channel.cpp
 
-chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /home/slamtec/chassis_ws/devel/include/chassis_ros/battery.h
-chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /home/slamtec/chassis_ws/devel/include/chassis_ros/batteryRequest.h
-chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /home/slamtec/chassis_ws/devel/include/chassis_ros/batteryResponse.h
 chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /home/slamtec/chassis_ws/src/chassis_ros/server/battery_client.cpp
 chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
@@ -134,7 +131,6 @@ chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/
 chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/melodic/include/ros/message.h
 chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/melodic/include/ros/message_event.h
 chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/melodic/include/ros/message_forward.h
-chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/melodic/include/ros/message_operations.h
 chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/melodic/include/ros/message_traits.h
 chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/melodic/include/ros/names.h
 chassis_ros/CMakeFiles/battery_client.dir/server/battery_client.cpp.o: /opt/ros/melodic/include/ros/node_handle.h
